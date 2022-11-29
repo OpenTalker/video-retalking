@@ -1,6 +1,10 @@
 <div align="center">
 
-<h2>VideoReTalking <br/> <span style="font-size:12px">Audio-based Lip Synchronization for Talking Head Video Editing In the Wild</span> </h2>
+<h2>VideoReTalking <br/> <span style="font-size:12px">Audio-based Lip Synchronization for Talking Head Video Editing In the Wild</span> </h2> 
+
+
+
+![paper](https://img.shields.io/badge/ArXiv-2211.14758-red)
 
 <div>
     <a target='_blank'>Kun Cheng <sup>*,1,2</sup> </a>&emsp;
@@ -20,6 +24,7 @@
 <br>
 <i><strong><a href='https://sa2022.siggraph.org/' target='_blank'>SIGGRAPH Asia 2022 Conferenence Track</a></strong></i>
 <br>
+<br>
 <img src="./images/teaser.png?raw=true" width="768px">
 
 <div align="justify"> We present VideoReTalking, a new system to edit the faces of a real-world talking head video according to input audio, producing a high-quality and lip-syncing output video even with a different emotion. Our system disentangles this objective into three sequential tasks: (1) face video generation with a canonical expression; (2) audio-driven lip-sync; and (3) face enhancement for improving photo-realism. Given a talking-head video, we first modify the expression of each frame according to the same expression template using the expression editing network, resulting in a video with the canonical expression. This video, together with the given audio, is then fed into the lip-sync network to generate a lip-syncing video. Finally, we improve the photo-realism of the synthesized faces through an identity-aware face enhancement network and post-processing. We use learning-based approaches for all three steps and all our modules can be tackled in a sequential pipeline without any user intervention.</div>
@@ -31,4 +36,20 @@
 </p>
 
 </div>
+
+
+## **Citation**
+
+If you find our work useful in your research, please consider citing:
+
+```
+@misc{cheng2022videoretalking,
+        title={VideoReTalking: Audio-based Lip Synchronization for Talking Head Video Editing In the Wild}, 
+        author={Kun Cheng and Xiaodong Cun and Yong Zhang and Menghan Xia and Fei Yin and Mingrui Zhu and Xuan Wang and Jue Wang and Nannan Wang},
+        year={2022},
+        eprint={2211.14758},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV}
+  }
+```
 
