@@ -1,0 +1,61 @@
+------------------- [train][220419_183211]Options --------------------
+                   aus_nc: 17                            
+                  aus_pkl: aus_openface.pkl              
+               batch_size: 25                            
+                    beta1: 0.5                           
+                 ckpt_dir: ./ckpts/./ganimation/220419_183211	[default: ./ckpts]
+                data_root: .                             	[default: None]
+              epoch_count: 1                             
+               final_size: 128                           
+                 gan_type: wgan-gp                       
+                  gpu_ids: [0]                           	[default: 0]
+                   img_nc: 3                             
+                 imgs_dir: imgs                          
+                init_gain: 0.02                          
+                init_type: normal                        
+          interpolate_len: 5                             
+               lambda_aus: 160.0                         
+               lambda_dis: 1.0                           
+              lambda_mask: 0                             
+               lambda_rec: 10.0                          
+                lambda_tv: 0                             
+           lambda_wgan_gp: 10.0                          
+               load_epoch: 0                             
+                load_size: 148                           
+                 log_file: logs.txt                      
+                       lr: 0.0001                        
+           lr_decay_iters: 50                            
+                lr_policy: lambda                        
+               lucky_seed: 1650364331                    	[default: 0]
+         max_dataset_size: inf                           
+                     mode: train                         
+                    model: ganimation                    
+                n_threads: 6                             
+                     name: 220419_183211                 
+                      ndf: 64                            
+                      ngf: 64                            
+                    niter: 20                            
+              niter_decay: 10                            
+             no_aus_noise: False                         
+                  no_flip: False                         
+             no_test_eval: False                         
+                     norm: instance                      
+                 opt_file: opt.txt                       
+         plot_losses_freq: 20000                         
+        print_losses_freq: 100                           
+           resize_or_crop: none                          
+                  results: results                       
+          sample_img_freq: 2000                          
+          save_epoch_freq: 2                             
+            save_test_gif: False                         
+           serial_batches: False                         
+                 test_csv: test_ids.csv                  
+                train_csv: train_ids.csv                 
+           train_gen_iter: 5                             
+              use_dropout: False                         
+        visdom_display_id: 1                             
+               visdom_env: main                          
+              visdom_port: 8097                          
+--------------------- [train][220419_183211]End ----------------------
+
+

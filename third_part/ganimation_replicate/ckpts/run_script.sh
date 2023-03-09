@@ -1,0 +1,12 @@
+[ test][220419_183311]python test.py --data_root . --mode test
+[ test][220419_183356]python test.py --data_root . --mode test
+[ test][220419_183456]python test.py --data_root . --mode test
+[ test][220419_183528]python test.py --data_root . --mode test
+[ test][220419_183711]python test.py --data_root . --mode test
+[ test][220419_183837]python test.py --data_root . --mode test
+[ test][220419_184333]python test.py --data_root . --mode test
+[ test][220419_184442]python test.py --data_root . --mode test
+[ test][220419_184500]python test.py --data_root . --mode test
+[ test][220419_184533]python test.py --data_root . --mode test
+[ test][220419_184603]python test.py --data_root . --mode test
+[ test][220419_184714]python test.py --data_root . --mode test

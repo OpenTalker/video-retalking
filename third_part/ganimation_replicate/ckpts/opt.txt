@@ -1,0 +1,732 @@
+------------------- [ test][220419_183311]Options --------------------
+                   aus_nc: 17                            
+                  aus_pkl: aus_openface.pkl              
+               batch_size: 25                            
+                    beta1: 0.5                           
+                 ckpt_dir: ./ckpts                       
+                data_root: .                             	[default: None]
+              epoch_count: 1                             
+               final_size: 128                           
+                 gan_type: wgan-gp                       
+                  gpu_ids: [0]                           	[default: 0]
+                   img_nc: 3                             
+                 imgs_dir: imgs                          
+                init_gain: 0.02                          
+                init_type: normal                        
+          interpolate_len: 5                             
+               lambda_aus: 160.0                         
+               lambda_dis: 1.0                           
+              lambda_mask: 0                             
+               lambda_rec: 10.0                          
+                lambda_tv: 0                             
+           lambda_wgan_gp: 10.0                          
+               load_epoch: 0                             
+                load_size: 148                           
+                 log_file: logs.txt                      
+                       lr: 0.0001                        
+           lr_decay_iters: 50                            
+                lr_policy: lambda                        
+               lucky_seed: 1650364391                    	[default: 0]
+         max_dataset_size: inf                           
+                     mode: test                          	[default: train]
+                    model: ganimation                    
+                n_threads: 6                             
+                     name: 220419_183311                 
+                      ndf: 64                            
+                      ngf: 64                            
+                    niter: 20                            
+              niter_decay: 10                            
+             no_aus_noise: False                         
+                  no_flip: False                         
+             no_test_eval: False                         
+                     norm: instance                      
+                 opt_file: opt.txt                       
+         plot_losses_freq: 20000                         
+        print_losses_freq: 100                           
+           resize_or_crop: none                          
+                  results: results/._ganimation_0        	[default: results]
+          sample_img_freq: 2000                          
+          save_epoch_freq: 2                             
+            save_test_gif: False                         
+           serial_batches: False                         
+                 test_csv: test_ids.csv                  
+                train_csv: train_ids.csv                 
+           train_gen_iter: 5                             
+              use_dropout: False                         
+        visdom_display_id: 0                             	[default: 1]
+               visdom_env: main                          
+              visdom_port: 8097                          
+--------------------- [ test][220419_183311]End ----------------------
+
+
+------------------- [ test][220419_183356]Options --------------------
+                   aus_nc: 17                            
+                  aus_pkl: aus_openface.pkl              
+               batch_size: 25                            
+                    beta1: 0.5                           
+                 ckpt_dir: ./ckpts                       
+                data_root: .                             	[default: None]
+              epoch_count: 1                             
+               final_size: 128                           
+                 gan_type: wgan-gp                       
+                  gpu_ids: [0]                           	[default: 0]
+                   img_nc: 3                             
+                 imgs_dir: imgs                          
+                init_gain: 0.02                          
+                init_type: normal                        
+          interpolate_len: 5                             
+               lambda_aus: 160.0                         
+               lambda_dis: 1.0                           
+              lambda_mask: 0                             
+               lambda_rec: 10.0                          
+                lambda_tv: 0                             
+           lambda_wgan_gp: 10.0                          
+               load_epoch: 0                             
+                load_size: 148                           
+                 log_file: logs.txt                      
+                       lr: 0.0001                        
+           lr_decay_iters: 50                            
+                lr_policy: lambda                        
+               lucky_seed: 1650364436                    	[default: 0]
+         max_dataset_size: inf                           
+                     mode: test                          	[default: train]
+                    model: ganimation                    
+                n_threads: 6                             
+                     name: 220419_183356                 
+                      ndf: 64                            
+                      ngf: 64                            
+                    niter: 20                            
+              niter_decay: 10                            
+             no_aus_noise: False                         
+                  no_flip: False                         
+             no_test_eval: False                         
+                     norm: instance                      
+                 opt_file: opt.txt                       
+         plot_losses_freq: 20000                         
+        print_losses_freq: 100                           
+           resize_or_crop: none                          
+                  results: results/._ganimation_0        	[default: results]
+          sample_img_freq: 2000                          
+          save_epoch_freq: 2                             
+            save_test_gif: False                         
+           serial_batches: False                         
+                 test_csv: test_ids.csv                  
+                train_csv: train_ids.csv                 
+           train_gen_iter: 5                             
+              use_dropout: False                         
+        visdom_display_id: 0                             	[default: 1]
+               visdom_env: main                          
+              visdom_port: 8097                          
+--------------------- [ test][220419_183356]End ----------------------
+
+
+------------------- [ test][220419_183456]Options --------------------
+                   aus_nc: 17                            
+                  aus_pkl: aus_openface.pkl              
+               batch_size: 25                            
+                    beta1: 0.5                           
+                 ckpt_dir: ./ckpts                       
+                data_root: .                             	[default: None]
+              epoch_count: 1                             
+               final_size: 128                           
+                 gan_type: wgan-gp                       
+                  gpu_ids: [0]                           	[default: 0]
+                   img_nc: 3                             
+                 imgs_dir: imgs                          
+                init_gain: 0.02                          
+                init_type: normal                        
+          interpolate_len: 5                             
+               lambda_aus: 160.0                         
+               lambda_dis: 1.0                           
+              lambda_mask: 0                             
+               lambda_rec: 10.0                          
+                lambda_tv: 0                             
+           lambda_wgan_gp: 10.0                          
+               load_epoch: 0                             
+                load_size: 148                           
+                 log_file: logs.txt                      
+                       lr: 0.0001                        
+           lr_decay_iters: 50                            
+                lr_policy: lambda                        
+               lucky_seed: 1650364496                    	[default: 0]
+         max_dataset_size: inf                           
+                     mode: test                          	[default: train]
+                    model: ganimation                    
+                n_threads: 6                             
+                     name: 220419_183456                 
+                      ndf: 64                            
+                      ngf: 64                            
+                    niter: 20                            
+              niter_decay: 10                            
+             no_aus_noise: False                         
+                  no_flip: False                         
+             no_test_eval: False                         
+                     norm: instance                      
+                 opt_file: opt.txt                       
+         plot_losses_freq: 20000                         
+        print_losses_freq: 100                           
+           resize_or_crop: none                          
+                  results: results/._ganimation_0        	[default: results]
+          sample_img_freq: 2000                          
+          save_epoch_freq: 2                             
+            save_test_gif: False                         
+           serial_batches: False                         
+                 test_csv: test_ids.csv                  
+                train_csv: train_ids.csv                 
+           train_gen_iter: 5                             
+              use_dropout: False                         
+        visdom_display_id: 0                             	[default: 1]
+               visdom_env: main                          
+              visdom_port: 8097                          
+--------------------- [ test][220419_183456]End ----------------------
+
+
+------------------- [ test][220419_183528]Options --------------------
+                   aus_nc: 17                            
+                  aus_pkl: aus_openface.pkl              
+               batch_size: 25                            
+                    beta1: 0.5                           
+                 ckpt_dir: ./ckpts                       
+                data_root: .                             	[default: None]
+              epoch_count: 1                             
+               final_size: 128                           
+                 gan_type: wgan-gp                       
+                  gpu_ids: [0]                           	[default: 0]
+                   img_nc: 3                             
+                 imgs_dir: imgs                          
+                init_gain: 0.02                          
+                init_type: normal                        
+          interpolate_len: 5                             
+               lambda_aus: 160.0                         
+               lambda_dis: 1.0                           
+              lambda_mask: 0                             
+               lambda_rec: 10.0                          
+                lambda_tv: 0                             
+           lambda_wgan_gp: 10.0                          
+               load_epoch: 0                             
+                load_size: 148                           
+                 log_file: logs.txt                      
+                       lr: 0.0001                        
+           lr_decay_iters: 50                            
+                lr_policy: lambda                        
+               lucky_seed: 1650364528                    	[default: 0]
+         max_dataset_size: inf                           
+                     mode: test                          	[default: train]
+                    model: ganimation                    
+                n_threads: 6                             
+                     name: 220419_183528                 
+                      ndf: 64                            
+                      ngf: 64                            
+                    niter: 20                            
+              niter_decay: 10                            
+             no_aus_noise: False                         
+                  no_flip: False                         
+             no_test_eval: False                         
+                     norm: instance                      
+                 opt_file: opt.txt                       
+         plot_losses_freq: 20000                         
+        print_losses_freq: 100                           
+           resize_or_crop: none                          
+                  results: results/._ganimation_0        	[default: results]
+          sample_img_freq: 2000                          
+          save_epoch_freq: 2                             
+            save_test_gif: False                         
+           serial_batches: False                         
+                 test_csv: test_ids.csv                  
+                train_csv: train_ids.csv                 
+           train_gen_iter: 5                             
+              use_dropout: False                         
+        visdom_display_id: 0                             	[default: 1]
+               visdom_env: main                          
+              visdom_port: 8097                          
+--------------------- [ test][220419_183528]End ----------------------
+
+
+------------------- [ test][220419_183711]Options --------------------
+                   aus_nc: 17                            
+                  aus_pkl: aus_openface.pkl              
+               batch_size: 25                            
+                    beta1: 0.5                           
+                 ckpt_dir: ./ckpts                       
+                data_root: .                             	[default: None]
+              epoch_count: 1                             
+               final_size: 128                           
+                 gan_type: wgan-gp                       
+                  gpu_ids: [0]                           	[default: 0]
+                   img_nc: 3                             
+                 imgs_dir: imgs                          
+                init_gain: 0.02                          
+                init_type: normal                        
+          interpolate_len: 5                             
+               lambda_aus: 160.0                         
+               lambda_dis: 1.0                           
+              lambda_mask: 0                             
+               lambda_rec: 10.0                          
+                lambda_tv: 0                             
+           lambda_wgan_gp: 10.0                          
+               load_epoch: 0                             
+                load_size: 148                           
+                 log_file: logs.txt                      
+                       lr: 0.0001                        
+           lr_decay_iters: 50                            
+                lr_policy: lambda                        
+               lucky_seed: 1650364631                    	[default: 0]
+         max_dataset_size: inf                           
+                     mode: test                          	[default: train]
+                    model: ganimation                    
+                n_threads: 6                             
+                     name: 220419_183711                 
+                      ndf: 64                            
+                      ngf: 64                            
+                    niter: 20                            
+              niter_decay: 10                            
+             no_aus_noise: False                         
+                  no_flip: False                         
+             no_test_eval: False                         
+                     norm: instance                      
+                 opt_file: opt.txt                       
+         plot_losses_freq: 20000                         
+        print_losses_freq: 100                           
+           resize_or_crop: none                          
+                  results: results/._ganimation_0        	[default: results]
+          sample_img_freq: 2000                          
+          save_epoch_freq: 2                             
+            save_test_gif: False                         
+           serial_batches: False                         
+                 test_csv: test_ids.csv                  
+                train_csv: train_ids.csv                 
+           train_gen_iter: 5                             
+              use_dropout: False                         
+        visdom_display_id: 0                             	[default: 1]
+               visdom_env: main                          
+              visdom_port: 8097                          
+--------------------- [ test][220419_183711]End ----------------------
+
+
+------------------- [ test][220419_183837]Options --------------------
+                   aus_nc: 17                            
+                  aus_pkl: aus_openface.pkl              
+               batch_size: 25                            
+                    beta1: 0.5                           
+                 ckpt_dir: ./ckpts                       
+                data_root: .                             	[default: None]
+              epoch_count: 1                             
+               final_size: 128                           
+                 gan_type: wgan-gp                       
+                  gpu_ids: [0]                           	[default: 0]
+                   img_nc: 3                             
+                 imgs_dir: imgs                          
+                init_gain: 0.02                          
+                init_type: normal                        
+          interpolate_len: 5                             
+               lambda_aus: 160.0                         
+               lambda_dis: 1.0                           
+              lambda_mask: 0                             
+               lambda_rec: 10.0                          
+                lambda_tv: 0                             
+           lambda_wgan_gp: 10.0                          
+               load_epoch: 0                             
+                load_size: 148                           
+                 log_file: logs.txt                      
+                       lr: 0.0001                        
+           lr_decay_iters: 50                            
+                lr_policy: lambda                        
+               lucky_seed: 1650364717                    	[default: 0]
+         max_dataset_size: inf                           
+                     mode: test                          	[default: train]
+                    model: ganimation                    
+                n_threads: 6                             
+                     name: 220419_183837                 
+                      ndf: 64                            
+                      ngf: 64                            
+                    niter: 20                            
+              niter_decay: 10                            
+             no_aus_noise: False                         
+                  no_flip: False                         
+             no_test_eval: False                         
+                     norm: instance                      
+                 opt_file: opt.txt                       
+         plot_losses_freq: 20000                         
+        print_losses_freq: 100                           
+           resize_or_crop: none                          
+                  results: results/._ganimation_0        	[default: results]
+          sample_img_freq: 2000                          
+          save_epoch_freq: 2                             
+            save_test_gif: False                         
+           serial_batches: False                         
+                 test_csv: test_ids.csv                  
+                train_csv: train_ids.csv                 
+           train_gen_iter: 5                             
+              use_dropout: False                         
+        visdom_display_id: 0                             	[default: 1]
+               visdom_env: main                          
+              visdom_port: 8097                          
+--------------------- [ test][220419_183837]End ----------------------
+
+
+------------------- [ test][220419_184333]Options --------------------
+                   aus_nc: 17                            
+                  aus_pkl: aus_openface.pkl              
+               batch_size: 25                            
+                    beta1: 0.5                           
+                 ckpt_dir: ./ckpts                       
+                data_root: .                             	[default: None]
+              epoch_count: 1                             
+               final_size: 128                           
+                 gan_type: wgan-gp                       
+                  gpu_ids: [0]                           	[default: 0]
+                   img_nc: 3                             
+                 imgs_dir: imgs                          
+                init_gain: 0.02                          
+                init_type: normal                        
+          interpolate_len: 5                             
+               lambda_aus: 160.0                         
+               lambda_dis: 1.0                           
+              lambda_mask: 0                             
+               lambda_rec: 10.0                          
+                lambda_tv: 0                             
+           lambda_wgan_gp: 10.0                          
+               load_epoch: 0                             
+                load_size: 148                           
+                 log_file: logs.txt                      
+                       lr: 0.0001                        
+           lr_decay_iters: 50                            
+                lr_policy: lambda                        
+               lucky_seed: 1650365013                    	[default: 0]
+         max_dataset_size: inf                           
+                     mode: test                          	[default: train]
+                    model: ganimation                    
+                n_threads: 6                             
+                     name: 220419_184333                 
+                      ndf: 64                            
+                      ngf: 64                            
+                    niter: 20                            
+              niter_decay: 10                            
+             no_aus_noise: False                         
+                  no_flip: False                         
+             no_test_eval: False                         
+                     norm: instance                      
+                 opt_file: opt.txt                       
+         plot_losses_freq: 20000                         
+        print_losses_freq: 100                           
+           resize_or_crop: none                          
+                  results: results/._ganimation_0        	[default: results]
+          sample_img_freq: 2000                          
+          save_epoch_freq: 2                             
+            save_test_gif: False                         
+           serial_batches: False                         
+                 test_csv: test_ids.csv                  
+                train_csv: train_ids.csv                 
+           train_gen_iter: 5                             
+              use_dropout: False                         
+        visdom_display_id: 0                             	[default: 1]
+               visdom_env: main                          
+              visdom_port: 8097                          
+--------------------- [ test][220419_184333]End ----------------------
+
+
+------------------- [ test][220419_184442]Options --------------------
+                   aus_nc: 17                            
+                  aus_pkl: aus_openface.pkl              
+               batch_size: 25                            
+                    beta1: 0.5                           
+                 ckpt_dir: ./ckpts                       
+                data_root: .                             	[default: None]
+              epoch_count: 1                             
+               final_size: 128                           
+                 gan_type: wgan-gp                       
+                  gpu_ids: [0]                           	[default: 0]
+                   img_nc: 3                             
+                 imgs_dir: imgs                          
+                init_gain: 0.02                          
+                init_type: normal                        
+          interpolate_len: 5                             
+               lambda_aus: 160.0                         
+               lambda_dis: 1.0                           
+              lambda_mask: 0                             
+               lambda_rec: 10.0                          
+                lambda_tv: 0                             
+           lambda_wgan_gp: 10.0                          
+               load_epoch: 0                             
+                load_size: 148                           
+                 log_file: logs.txt                      
+                       lr: 0.0001                        
+           lr_decay_iters: 50                            
+                lr_policy: lambda                        
+               lucky_seed: 1650365082                    	[default: 0]
+         max_dataset_size: inf                           
+                     mode: test                          	[default: train]
+                    model: ganimation                    
+                n_threads: 6                             
+                     name: 220419_184442                 
+                      ndf: 64                            
+                      ngf: 64                            
+                    niter: 20                            
+              niter_decay: 10                            
+             no_aus_noise: False                         
+                  no_flip: False                         
+             no_test_eval: False                         
+                     norm: instance                      
+                 opt_file: opt.txt                       
+         plot_losses_freq: 20000                         
+        print_losses_freq: 100                           
+           resize_or_crop: none                          
+                  results: results/._ganimation_0        	[default: results]
+          sample_img_freq: 2000                          
+          save_epoch_freq: 2                             
+            save_test_gif: False                         
+           serial_batches: False                         
+                 test_csv: test_ids.csv                  
+                train_csv: train_ids.csv                 
+           train_gen_iter: 5                             
+              use_dropout: False                         
+        visdom_display_id: 0                             	[default: 1]
+               visdom_env: main                          
+              visdom_port: 8097                          
+--------------------- [ test][220419_184442]End ----------------------
+
+
+------------------- [ test][220419_184500]Options --------------------
+                   aus_nc: 17                            
+                  aus_pkl: aus_openface.pkl              
+               batch_size: 25                            
+                    beta1: 0.5                           
+                 ckpt_dir: ./ckpts                       
+                data_root: .                             	[default: None]
+              epoch_count: 1                             
+               final_size: 128                           
+                 gan_type: wgan-gp                       
+                  gpu_ids: [0]                           	[default: 0]
+                   img_nc: 3                             
+                 imgs_dir: imgs                          
+                init_gain: 0.02                          
+                init_type: normal                        
+          interpolate_len: 5                             
+               lambda_aus: 160.0                         
+               lambda_dis: 1.0                           
+              lambda_mask: 0                             
+               lambda_rec: 10.0                          
+                lambda_tv: 0                             
+           lambda_wgan_gp: 10.0                          
+               load_epoch: 0                             
+                load_size: 148                           
+                 log_file: logs.txt                      
+                       lr: 0.0001                        
+           lr_decay_iters: 50                            
+                lr_policy: lambda                        
+               lucky_seed: 1650365100                    	[default: 0]
+         max_dataset_size: inf                           
+                     mode: test                          	[default: train]
+                    model: ganimation                    
+                n_threads: 6                             
+                     name: 220419_184500                 
+                      ndf: 64                            
+                      ngf: 64                            
+                    niter: 20                            
+              niter_decay: 10                            
+             no_aus_noise: False                         
+                  no_flip: False                         
+             no_test_eval: False                         
+                     norm: instance                      
+                 opt_file: opt.txt                       
+         plot_losses_freq: 20000                         
+        print_losses_freq: 100                           
+           resize_or_crop: none                          
+                  results: results/._ganimation_0        	[default: results]
+          sample_img_freq: 2000                          
+          save_epoch_freq: 2                             
+            save_test_gif: False                         
+           serial_batches: False                         
+                 test_csv: test_ids.csv                  
+                train_csv: train_ids.csv                 
+           train_gen_iter: 5                             
+              use_dropout: False                         
+        visdom_display_id: 0                             	[default: 1]
+               visdom_env: main                          
+              visdom_port: 8097                          
+--------------------- [ test][220419_184500]End ----------------------
+
+
+------------------- [ test][220419_184533]Options --------------------
+                   aus_nc: 17                            
+                  aus_pkl: aus_openface.pkl              
+               batch_size: 25                            
+                    beta1: 0.5                           
+                 ckpt_dir: ./ckpts                       
+                data_root: .                             	[default: None]
+              epoch_count: 1                             
+               final_size: 128                           
+                 gan_type: wgan-gp                       
+                  gpu_ids: [0]                           	[default: 0]
+                   img_nc: 3                             
+                 imgs_dir: imgs                          
+                init_gain: 0.02                          
+                init_type: normal                        
+          interpolate_len: 5                             
+               lambda_aus: 160.0                         
+               lambda_dis: 1.0                           
+              lambda_mask: 0                             
+               lambda_rec: 10.0                          
+                lambda_tv: 0                             
+           lambda_wgan_gp: 10.0                          
+               load_epoch: 0                             
+                load_size: 148                           
+                 log_file: logs.txt                      
+                       lr: 0.0001                        
+           lr_decay_iters: 50                            
+                lr_policy: lambda                        
+               lucky_seed: 1650365133                    	[default: 0]
+         max_dataset_size: inf                           
+                     mode: test                          	[default: train]
+                    model: ganimation                    
+                n_threads: 6                             
+                     name: 220419_184533                 
+                      ndf: 64                            
+                      ngf: 64                            
+                    niter: 20                            
+              niter_decay: 10                            
+             no_aus_noise: False                         
+                  no_flip: False                         
+             no_test_eval: False                         
+                     norm: instance                      
+                 opt_file: opt.txt                       
+         plot_losses_freq: 20000                         
+        print_losses_freq: 100                           
+           resize_or_crop: none                          
+                  results: results/._ganimation_0        	[default: results]
+          sample_img_freq: 2000                          
+          save_epoch_freq: 2                             
+            save_test_gif: False                         
+           serial_batches: False                         
+                 test_csv: test_ids.csv                  
+                train_csv: train_ids.csv                 
+           train_gen_iter: 5                             
+              use_dropout: False                         
+        visdom_display_id: 0                             	[default: 1]
+               visdom_env: main                          
+              visdom_port: 8097                          
+--------------------- [ test][220419_184533]End ----------------------
+
+
+------------------- [ test][220419_184603]Options --------------------
+                   aus_nc: 17                            
+                  aus_pkl: aus_openface.pkl              
+               batch_size: 25                            
+                    beta1: 0.5                           
+                 ckpt_dir: ./ckpts                       
+                data_root: .                             	[default: None]
+              epoch_count: 1                             
+               final_size: 128                           
+                 gan_type: wgan-gp                       
+                  gpu_ids: [0]                           	[default: 0]
+                   img_nc: 3                             
+                 imgs_dir: imgs                          
+                init_gain: 0.02                          
+                init_type: normal                        
+          interpolate_len: 5                             
+               lambda_aus: 160.0                         
+               lambda_dis: 1.0                           
+              lambda_mask: 0                             
+               lambda_rec: 10.0                          
+                lambda_tv: 0                             
+           lambda_wgan_gp: 10.0                          
+               load_epoch: 0                             
+                load_size: 148                           
+                 log_file: logs.txt                      
+                       lr: 0.0001                        
+           lr_decay_iters: 50                            
+                lr_policy: lambda                        
+               lucky_seed: 1650365163                    	[default: 0]
+         max_dataset_size: inf                           
+                     mode: test                          	[default: train]
+                    model: ganimation                    
+                n_threads: 6                             
+                     name: 220419_184603                 
+                      ndf: 64                            
+                      ngf: 64                            
+                    niter: 20                            
+              niter_decay: 10                            
+             no_aus_noise: False                         
+                  no_flip: False                         
+             no_test_eval: False                         
+                     norm: instance                      
+                 opt_file: opt.txt                       
+         plot_losses_freq: 20000                         
+        print_losses_freq: 100                           
+           resize_or_crop: none                          
+                  results: results/._ganimation_0        	[default: results]
+          sample_img_freq: 2000                          
+          save_epoch_freq: 2                             
+            save_test_gif: False                         
+           serial_batches: False                         
+                 test_csv: test_ids.csv                  
+                train_csv: train_ids.csv                 
+           train_gen_iter: 5                             
+              use_dropout: False                         
+        visdom_display_id: 0                             	[default: 1]
+               visdom_env: main                          
+              visdom_port: 8097                          
+--------------------- [ test][220419_184603]End ----------------------
+
+
+------------------- [ test][220419_184714]Options --------------------
+                   aus_nc: 17                            
+                  aus_pkl: aus_openface.pkl              
+               batch_size: 25                            
+                    beta1: 0.5                           
+                 ckpt_dir: ./ckpts                       
+                data_root: .                             	[default: None]
+              epoch_count: 1                             
+               final_size: 128                           
+                 gan_type: wgan-gp                       
+                  gpu_ids: [0]                           	[default: 0]
+                   img_nc: 3                             
+                 imgs_dir: imgs                          
+                init_gain: 0.02                          
+                init_type: normal                        
+          interpolate_len: 5                             
+               lambda_aus: 160.0                         
+               lambda_dis: 1.0                           
+              lambda_mask: 0                             
+               lambda_rec: 10.0                          
+                lambda_tv: 0                             
+           lambda_wgan_gp: 10.0                          
+               load_epoch: 0                             
+                load_size: 148                           
+                 log_file: logs.txt                      
+                       lr: 0.0001                        
+           lr_decay_iters: 50                            
+                lr_policy: lambda                        
+               lucky_seed: 1650365234                    	[default: 0]
+         max_dataset_size: inf                           
+                     mode: test                          	[default: train]
+                    model: ganimation                    
+                n_threads: 6                             
+                     name: 220419_184714                 
+                      ndf: 64                            
+                      ngf: 64                            
+                    niter: 20                            
+              niter_decay: 10                            
+             no_aus_noise: False                         
+                  no_flip: False                         
+             no_test_eval: False                         
+                     norm: instance                      
+                 opt_file: opt.txt                       
+         plot_losses_freq: 20000                         
+        print_losses_freq: 100                           
+           resize_or_crop: none                          
+                  results: results/._ganimation_0        	[default: results]
+          sample_img_freq: 2000                          
+          save_epoch_freq: 2                             
+            save_test_gif: False                         
+           serial_batches: False                         
+                 test_csv: test_ids.csv                  
+                train_csv: train_ids.csv                 
+           train_gen_iter: 5                             
+              use_dropout: False                         
+        visdom_display_id: 0                             	[default: 1]
+               visdom_env: main                          
+              visdom_port: 8097                          
+--------------------- [ test][220419_184714]End ----------------------
+
+

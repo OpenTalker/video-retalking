@@ -1,0 +1,34 @@
+----------------- Options ---------------
+                add_image: True                          
+               bfm_folder: BFM                           
+                bfm_model: BFM_model_front.mat           
+                 camera_d: 10.0                          
+                   center: 112.0                         
+          checkpoints_dir: ./checkpoints                 
+             dataset_mode: None                          
+                 ddp_port: 12355                         
+        display_per_batch: True                          
+                    epoch: 20                            	[default: latest]
+          eval_batch_nums: inf                           
+                    focal: 1015.0                        
+                  gpu_ids: 0                             
+     inference_batch_size: 8                             
+                init_path: checkpoints/init_model/resnet50-0676ba61.pth
+                input_dir: demo_video                    	[default: None]
+                  isTrain: False                         	[default: None]
+             keypoint_dir: demo_cctv                     	[default: None]
+                    model: facerecon                     
+                     name: model_name                    	[default: face_recon]
+                net_recon: resnet50                      
+               output_dir: demo_cctv                     	[default: mp4]
+                    phase: test                          
+         save_split_files: False                         
+                   suffix:                               
+                  use_ddp: False                         	[default: True]
+              use_last_fc: False                         
+                  verbose: False                         
+           vis_batch_nums: 1                             
+               world_size: 1                             
+                    z_far: 15.0                          
+                   z_near: 5.0                           
+----------------- End -------------------
