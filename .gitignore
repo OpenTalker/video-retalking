@@ -1,14 +1,10 @@
 *.pkl
 *.jpg
-*.mp4
 *.pth
 *.pyc
 __pycache__
 *.h5
-*.avi
-*.wav
 *.pyc
 *.mkv
 *.gif
 *.webm
-*.mp3
