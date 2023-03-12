@@ -35,6 +35,11 @@
 
 </div>
 
+## Results in the Wild （contains audio）
+https://user-images.githubusercontent.com/4397546/224310754-665eb2dd-aadc-47dc-b1f9-2029a937b20a.mp4
+
+
+
 
 ## Environment
 ```
@@ -95,3 +100,17 @@ Thanks to
 [ganimation_replicate](https://github.com/donydchen/ganimation_replicate),
 [STIT](https://github.com/rotemtzaban/STIT)
 for sharing their code.
+
+
+## Related Work
+- [StyleHEAT: One-Shot High-Resolution Editable Talking Face Generation via Pre-trained StyleGAN (ECCV 2020)](https://github.com/FeiiYin/StyleHEAT)
+- [CodeTalker: Speech-Driven 3D Facial Animation with Discrete Motion Prior (CVPR 2023)](https://github.com/Doubiiu/CodeTalker)
+- [SadTalker: Learning Realistic 3D Motion Coefficients for Stylized Audio-Driven Single Image Talking Face Animation (CVPR 2023)](https://github.com/Winfredy/SadTalker)
+- [DPE: Disentanglement of Pose and Expression for General Video Portrait Editing (CVPR 2023)](https://arxiv.org/abs/2301.06281)
+- [3D GAN Inversion with Facial Symmetry Prior (CVPR 2023)](https://github.com/FeiiYin/SPI/)
+- [T2M-GPT: Generating Human Motion from Textual Descriptions with Discrete Representations (CVPR 2023)](https://github.com/Mael-zys/T2M-GPT)
+
+##  Disclaimer
+
+This is not an official product of Tencent. This repository can only be used for personal/research/non-commercial purposes.
+
