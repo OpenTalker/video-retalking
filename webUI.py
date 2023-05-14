@@ -2,6 +2,7 @@ import random
 import subprocess
 import os
 import gradio
+import gradio as gr
 import shutil
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -84,15 +85,48 @@ def concatenate_videos(video_segments, output_file):
     subprocess.run(command, check=True)
 
 
-iface = gradio.Interface(convert,
-                         inputs=[
-                             gradio.Number(
-                                 label="Segment Length (seconds)", default=40, min=0, step=1),
-                             gradio.Video(),
-                             gradio.Audio(type='filepath')],
-                         outputs=[
-                             gradio.Video()
-                         ],
-                         theme="gradio_blue"
-                         )
-iface.launch()
+with gradio.Blocks() as demo:
+    with gradio.Column():
+        
+        with gradio.Row():
+            o = gradio.Video(label="Output Video")
+        with gradio.Row():
+            btn = gradio.Button(value="Synthesize")
+        with gradio.Row():
+            seg = gradio.Number(
+                label="segment length (Second), 0 for no segmentation")
+        with gradio.Row():
+            with gradio.Column():
+                v = gradio.Video(label='SOurce Face')
+                gradio.Examples(
+                    examples=[
+                        os.path.join(os.path.dirname(__file__),
+                                    "examples/face/1.mp4"),
+                        os.path.join(os.path.dirname(__file__),
+                                    "examples/face/2.mp4"),
+                        os.path.join(os.path.dirname(__file__),
+                                    "examples/face/3.mp4"),
+                        os.path.join(os.path.dirname(__file__),
+                                    "examples/face/4.mp4"),
+                        os.path.join(os.path.dirname(__file__),
+                                    "examples/face/5.mp4"),
+                    ],
+                    inputs=[v],
+                    fn=convert,
+                )
+            with gradio.Column():
+                a = gradio.Audio(type='filepath',label='Target Audio')
+                gradio.Examples(
+                    examples=[
+                        os.path.join(os.path.dirname(__file__),
+                                    "examples/audio/1.wav"),
+                        os.path.join(os.path.dirname(__file__),
+                                    "examples/audio/2.wav"),
+                    ],
+                    inputs=[a],
+                    fn=convert,
+                )
+                
+    btn.click(fn=convert, inputs=[seg, v, a], outputs=[o])
+
+demo.queue().launch()
