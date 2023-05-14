@@ -9,14 +9,20 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 
 
 def convert(segment_length, video, audio, progress=gradio.Progress()):
+    if segment_length is None:
+        segment_length=0
     print(video, audio)
 
     if segment_length != 0:
         video_segments = cut_video_segments(video, segment_length)
         audio_segments = cut_audio_segments(audio, segment_length)
     else:
-        video_segments = [os.path.relpath(video, current_dir)]
-        audio_segments = [os.path.relpath(audio, current_dir)]
+        video_path = os.path.join('temp/video', os.path.basename(video))
+        shutil.move(video, video_path)
+        video_segments = [video_path]
+        audio_path = os.path.join('temp/audio', os.path.basename(audio))
+        shutil.move(audio, audio_path)
+        audio_segments = [audio_path]
 
     processed_segments = []
     for i, (video_seg, audio_seg) in progress.tqdm(enumerate(zip(video_segments, audio_segments))):
@@ -85,48 +91,65 @@ def concatenate_videos(video_segments, output_file):
     subprocess.run(command, check=True)
 
 
-with gradio.Blocks() as demo:
-    with gradio.Column():
-        
-        with gradio.Row():
-            o = gradio.Video(label="Output Video")
-        with gradio.Row():
-            btn = gradio.Button(value="Synthesize")
-        with gradio.Row():
-            seg = gradio.Number(
-                label="segment length (Second), 0 for no segmentation")
-        with gradio.Row():
-            with gradio.Column():
-                v = gradio.Video(label='SOurce Face')
+with gradio.Blocks(
+    title="Audio-based Lip Synchronization",
+    theme=gr.themes.Base(
+        primary_hue=gr.themes.colors.green,
+        font=["Source Sans Pro", "Arial", "sans-serif"],
+        font_mono=['JetBrains mono', "Consolas", 'Courier New']
+    ),
+) as demo:
+    with gradio.Row():
+        gradio.Markdown("# Audio-based Lip Synchronization")
+    with gradio.Row():
+        with gradio.Column():
+            with gradio.Row():
+                seg = gradio.Number(
+                    label="segment length (Second), 0 for no segmentation")
+            with gradio.Row():
+                with gradio.Column():
+                    v = gradio.Video(label='SOurce Face')
+
+                with gradio.Column():
+                    a = gradio.Audio(
+                        type='filepath', label='Target Audio')
+
+            with gradio.Row():
+                btn = gradio.Button(value="Synthesize",variant="primary")
+            with gradio.Row():
                 gradio.Examples(
+                    label="Face Examples",
                     examples=[
                         os.path.join(os.path.dirname(__file__),
-                                    "examples/face/1.mp4"),
+                                     "examples/face/1.mp4"),
                         os.path.join(os.path.dirname(__file__),
-                                    "examples/face/2.mp4"),
+                                     "examples/face/2.mp4"),
                         os.path.join(os.path.dirname(__file__),
-                                    "examples/face/3.mp4"),
+                                     "examples/face/3.mp4"),
                         os.path.join(os.path.dirname(__file__),
-                                    "examples/face/4.mp4"),
+                                     "examples/face/4.mp4"),
                         os.path.join(os.path.dirname(__file__),
-                                    "examples/face/5.mp4"),
+                                     "examples/face/5.mp4"),
                     ],
                     inputs=[v],
                     fn=convert,
                 )
-            with gradio.Column():
-                a = gradio.Audio(type='filepath',label='Target Audio')
+            with gradio.Row():
                 gradio.Examples(
+                    label="Audio Examples",
                     examples=[
                         os.path.join(os.path.dirname(__file__),
-                                    "examples/audio/1.wav"),
+                                     "examples/audio/1.wav"),
                         os.path.join(os.path.dirname(__file__),
-                                    "examples/audio/2.wav"),
+                                     "examples/audio/2.wav"),
                     ],
                     inputs=[a],
                     fn=convert,
                 )
-                
+
+        with gradio.Column():
+            o = gradio.Video(label="Output Video")
+
     btn.click(fn=convert, inputs=[seg, v, a], outputs=[o])
 
 demo.queue().launch()
