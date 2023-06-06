@@ -8,3 +8,7 @@ __pycache__
 *.mkv
 *.gif
 *.webm
+checkpoints/*
+results/*
+temp/*
+segments.txt
