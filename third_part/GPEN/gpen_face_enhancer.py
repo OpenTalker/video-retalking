@@ -1,9 +1,6 @@
 import cv2
 import numpy as np
 
-import sys
-sys.path.append('third_part/GPEN')
-
 ######### face enhancement
 from face_parse.face_parsing import FaceParse
 from face_detect.retinaface_detection import RetinaFaceDetection

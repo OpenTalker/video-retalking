@@ -4,7 +4,10 @@ from tqdm import tqdm
 from PIL import Image
 from scipy.io import loadmat
 
-sys.path.append('third_part')
+sys.path.insert(0, 'third_part')
+sys.path.insert(0, 'third_part/GPEN')
+sys.path.insert(0, 'third_part/GFPGAN')
+
 # 3dmm extraction
 from third_part.face3d.util.preprocess import align_img
 from third_part.face3d.util.load_mats import load_lm3d
