@@ -7,4 +7,4 @@ facexlib==0.2.5
 librosa==0.9.2
 dlib==19.24.0
 gradio>=3.7.0
-numpy==1.21.6
+numpy==1.23.4
