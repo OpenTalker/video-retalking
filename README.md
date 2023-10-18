@@ -21,7 +21,7 @@
     <sup>1</sup> Xidian University &emsp; <sup>2</sup> Tencent AI Lab &emsp; <sup>3</sup> Tsinghua University
 </div>
 <br>
-<i><strong><a href='https://sa2022.siggraph.org/' target='_blank'>SIGGRAPH Asia 2022 Conferenence Track</a></strong></i>
+<i><strong><a href='https://sa2022.siggraph.org/' target='_blank'>SIGGRAPH Asia 2022 Conference Track</a></strong></i>
 <br>
 <br>
 <img src="./docs/static/images/teaser.png?raw=true" width="768px">
