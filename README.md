@@ -26,7 +26,7 @@
 <br>
 <img src="./docs/static/images/teaser.png?raw=true" width="768px">
 
-<div align="justify"> We present VideoReTalking, a new system to edit the faces of a real-world talking head video according to input audio, producing a high-quality and lip-syncing output video even with a different emotion. Our system disentangles this objective into three sequential tasks: (1) face video generation with a canonical expression; (2) audio-driven lip-sync; and (3) face enhancement for improving photo-realism. Given a talking-head video, we first modify the expression of each frame according to the same expression template using the expression editing network, resulting in a video with the canonical expression. This video, together with the given audio, is then fed into the lip-sync network to generate a lip-syncing video. Finally, we improve the photo-realism of the synthesized faces through an identity-aware face enhancement network and post-processing. We use learning-based approaches for all three steps and all our modules can be tackled in a sequential pipeline without any user intervention.</div>
+<div align="justify"> We present VideoReTalking, a new system to edit the faces of a real-world talking head video according to input audio, producing a high-quality and lip-syncing output video even with a different emotion. Our system disentangles this objective into three sequential tasks: (1) face video generation with a canonical expression; (2) audio-driven lip-sync; and (3) face enhancement for improving photo-realism. Given a talking-head video, we first modify the expression of each frame according to the same expression template using the expression editing network, resulting in a video with the canonical expression. This video, together with the given audio, is then fed into the lip-sync network to generate a lip-syncing video. Finally, we improve the photo-realism of the synthesized faces through an identity-aware face enhancement network and post-processing. We use learning-based approaches for all three steps, and all our modules can be tackled in a sequential pipeline without any user intervention.</div>
 <br>
 
 <p>
@@ -79,7 +79,7 @@ You can also control the expression by adding the following parameters:
 
 ```--exp_img```: Pre-defined expression template. The default is "neutral". You can choose "smile" or an image path.
 
-```--up_face```: You can choose "surprise" or "angry" to modify the expression of upper face with [GANimation](https://github.com/donydchen/ganimation_replicate).
+```--up_face```: You can choose "surprise" or "angry" to modify the expression of the upper face with [GANimation](https://github.com/donydchen/ganimation_replicate).
 
 
 
