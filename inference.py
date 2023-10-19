@@ -149,7 +149,7 @@ def main():
 
     if not os.path.isfile('temp/'+base_name+'_stablized.npy') or args.re_preprocess:
         imgs = []
-        for idx in tqdm(range(len(frames_pil)), desc="[Step 3] Stablize the expression In Video:"):
+        for idx in tqdm(range(len(frames_pil)), desc="[Step 3] Stabilize the expression In Video:"):
             if args.one_shot:
                 source_img = trans_image(frames_pil[0]).unsqueeze(0).to(device)
                 semantic_source_numpy = semantic_npy[0:1]
