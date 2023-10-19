@@ -13,7 +13,7 @@ def bilinear_interpolate(img, coords):
   x0, y0 = int_coords
   dx, dy = coords - int_coords
 
-  # 4 Neighour pixels
+  # 4 Neighbour pixels
   q11 = img[y0, x0]
   q21 = img[y0, x0+1]
   q12 = img[y0+1, x0]
