@@ -197,7 +197,7 @@ def Laplacian_Pyramid_Blending_with_mask(A, B, m, num_levels = 6):
     lpB  = [gpB[num_levels-1]]
     gpMr = [gpM[num_levels-1]]
     for i in range(num_levels-1,0,-1):
-        # Laplacian: subtarct upscaled version of lower level from current level
+        # Laplacian: subtract upscaled version of lower level from current level
         # to get the high frequencies
         LA = np.subtract(gpA[i-1], cv2.pyrUp(gpA[i]))
         LB = np.subtract(gpB[i-1], cv2.pyrUp(gpB[i]))
