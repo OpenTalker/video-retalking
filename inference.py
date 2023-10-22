@@ -168,7 +168,7 @@ def main():
         np.save('temp/'+base_name+'_stablized.npy',imgs)
         del D_Net
     else:
-        print('[Step 3] Using saved stablized video.')
+        print('[Step 3] Using saved stabilized video.')
         imgs = np.load('temp/'+base_name+'_stablized.npy')
     torch.cuda.empty_cache()
 
