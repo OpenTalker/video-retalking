@@ -6,7 +6,7 @@ def convert_flow_to_deformation(flow):
     Args:
         flow (tensor): Flow field obtained by the model
     Returns:
-        deformation (tensor): The deformation used for warpping
+        deformation (tensor): The deformation used for warping
     """
     b,c,h,w = flow.shape
     flow_norm = 2 * torch.cat([flow[:,:1,...]/(w-1),flow[:,1:,...]/(h-1)], 1)
@@ -42,10 +42,10 @@ def warp_image(source_image, deformation):
     r"""warp the input image according to the deformation
 
     Args:
-        source_image (tensor): source images to be warpped
+        source_image (tensor): source images to be warped
         deformation (tensor): deformations used to warp the images; value in range (-1, 1)
     Returns:
-        output (tensor): the warpped images
+        output (tensor): the warped images
     """ 
     _, h_old, w_old, _ = deformation.shape
     _, _, h, w = source_image.shape
