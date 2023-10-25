@@ -81,7 +81,7 @@ class Options(object):
         parser.add_argument('--lambda_wgan_gp', type=float, default=10., help='wgan gradient penalty weight')
 
         # frequency options
-        parser.add_argument('--train_gen_iter', type=int, default=5, help='train G every n interations.')
+        parser.add_argument('--train_gen_iter', type=int, default=5, help='train G every n iterations.')
         parser.add_argument('--print_losses_freq', type=int, default=100, help='print log every print_freq step.')
         parser.add_argument('--plot_losses_freq', type=int, default=20000, help='plot log every plot_freq step.')
         parser.add_argument('--sample_img_freq', type=int, default=2000, help='draw image every sample_img_freq step.')
