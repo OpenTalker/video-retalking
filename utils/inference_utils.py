@@ -107,7 +107,7 @@ def get_smoothened_boxes(boxes, T):
 
 def face_detect(images, args, jaw_correction=False, detector=None):
     if detector == None:
-        device = 'cuda' if torch.cuda.is_available() else 'cpu'
+        device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
         detector = face_detection.FaceAlignment(face_detection.LandmarksType._2D, 
                                                 flip_input=False, device=device)
 
