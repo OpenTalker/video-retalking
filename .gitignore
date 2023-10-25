@@ -12,3 +12,4 @@ checkpoints/*
 results/*
 temp/*
 segments.txt
+.DS_Store
