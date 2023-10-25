@@ -18,7 +18,7 @@ class BaseOptions():
     """
 
     def __init__(self, cmd_line=None):
-        """Reset the class; indicates the class hasn't been initailized"""
+        """Reset the class; indicates the class hasn't been initialized"""
         self.initialized = False
         self.cmd_line = None
         if cmd_line is not None:
