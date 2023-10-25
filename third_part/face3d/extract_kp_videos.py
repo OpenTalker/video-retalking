@@ -6,6 +6,7 @@ import argparse
 import face_alignment
 import numpy as np
 from PIL import Image
+import torch
 from tqdm import tqdm
 from itertools import cycle
 
@@ -13,7 +14,8 @@ from torch.multiprocessing import Pool, Process, set_start_method
 
 class KeypointExtractor():
     def __init__(self):
-        self.detector = face_alignment.FaceAlignment(face_alignment.LandmarksType._2D)   
+        device = 'cuda' if torch.cuda.is_available() else 'cpu'
+        self.detector = face_alignment.FaceAlignment(face_alignment.LandmarksType._2D, device=device)   
 
     def extract_keypoint(self, images, name=None, info=True):
         if isinstance(images, list):

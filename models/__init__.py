@@ -5,7 +5,8 @@ from models.ENet import ENet
 
 
 def _load(checkpoint_path):
-    checkpoint = torch.load(checkpoint_path)
+    map_location=None if torch.cuda.is_available() else torch.device('cpu')
+    checkpoint = torch.load(checkpoint_path, map_location=map_location)
     return checkpoint
 
 def load_checkpoint(path, model):
