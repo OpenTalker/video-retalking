@@ -137,4 +137,8 @@ This is not an official product of Tencent.
 6. It is prohibited to use this open-source code for activities that harm the legitimate rights and interests of others (including but not limited to fraud, deception, infringement of others' portrait rights, reputation rights, etc.), or other behaviors that violate applicable laws and regulations or go against social ethics and good customs (including providing incorrect or false information, spreading pornographic, terrorist, and violent information, etc.). Otherwise, you may be liable for your legal responsibilities.
 
 ```
+## All Thanks To Our Contributors 
 
+<a href="https://github.com/OpenTalker/video-retalking/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=OpenTalker/video-retalking" />
+</a>
