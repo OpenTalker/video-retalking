@@ -78,9 +78,6 @@ class Predictor(BasePredictor):
         self,
         face: Path = Input(description="Input video file of a talking-head."),
         input_audio: Path = Input(description="Input audio file."),
-        fps: int = Input(
-            description="Frame per second in the output video.", default=25
-        ),
     ) -> Path:
         """Run a single prediction on the model"""
         device = "cuda"
@@ -93,7 +90,7 @@ class Predictor(BasePredictor):
             audio=str(input_audio),
             exp_img="neutral",
             outfile=None,
-            fps=fps,
+            fps=25,
             pads=[0, 20, 0, 0],
             face_det_batch_size=4,
             LNet_batch_size=16,
