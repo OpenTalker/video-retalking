@@ -29,7 +29,8 @@ warnings.filterwarnings("ignore")
 args = options()
 
 def main():    
-    device = 'cuda' if torch.cuda.is_available() else 'cpu'
+    # device = 'cuda' if torch.cuda.is_available() else 'cpu'
+    device = torch.device('mps')
     print('[Info] Using {} for inference.'.format(device))
     os.makedirs(os.path.join('temp', args.tmp_dir), exist_ok=True)
 
