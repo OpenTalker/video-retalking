@@ -64,7 +64,9 @@ class FaceParse(object):
     def img2tensor(self, img):
         img = img[..., ::-1] # BGR to RGB
         img = img / 255. * 2 - 1
-        img_tensor = torch.from_numpy(img.transpose(2, 0, 1)).unsqueeze(0).to(self.device)
+        a = img.transpose(2, 0, 1)
+        a = np.float32(a)
+        img_tensor = torch.from_numpy(a).unsqueeze(0).to(self.device)
         return img_tensor.float()
 
     def tenor2mask(self, tensor, masks):
@@ -124,12 +126,6 @@ class FaceParse_v2(object):
             pred_mask = self.faceparse(imt)[0]
         mask = self.tenor2mask(pred_mask, masks)
         return mask
-
-    # def img2tensor(self, img):
-    #     img = img[..., ::-1] # BGR to RGB
-    #     img = img / 255. * 2 - 1
-    #     img_tensor = torch.from_numpy(img.transpose(2, 0, 1)).unsqueeze(0).to(self.device)
-    #     return img_tensor.float()
 
     def tenor2mask(self, tensor, masks):
         if len(tensor.shape) < 4:
